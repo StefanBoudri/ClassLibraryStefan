@@ -25,6 +25,16 @@ public class MathStefan
         return x < 0 ? -x : x;
     }
 
+    public static double Min(double a, double b)
+    {
+        return Constrain.MinHandler(a, b);
+    }
+   
+    public static double Max(double a, double b) 
+    {
+        return Constrain.MaxHandler(a, b);
+    }
+
     public static double Ln(double x)
     {
         return Logarithms.LnHandler(x);
