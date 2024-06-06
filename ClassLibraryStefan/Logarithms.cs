@@ -40,7 +40,7 @@ internal class Logarithms : MathStefan
     // Using formula ln(x) = (x - 1) - (x - 1)^2 / 2 + (x - 1)^3 / 3 - (x - 1)^4 / 4 + ...
     private static double LnSmallNumber(double x)
     {
-        int max = 5000;
+        int max = 10000;
         bool positive = true;
         double result = 0;
         for (int i = 1; i < max; i++)
@@ -58,4 +58,9 @@ internal class Logarithms : MathStefan
         return result;
     }
 
+    // Using formula Log(a, b) = ln(b)/ln(a)
+    public static double LogHandler(double b, double a)
+    {
+       return Ln(b) / Ln(a);
+    }
 }
