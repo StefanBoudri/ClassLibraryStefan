@@ -19,5 +19,24 @@ public class MathStefan
     {
         return Power.PowerHandler(a, b);
     }
+
+    public static double Sqrt(double x)
+    {
+        return SquareRoot.SqrtHandler(x);
+    }
+
+    // Using formula e^x (e stand for Eulers number) together with taylor expansion series
+    public static double Exp(double x)
+    {
+        int iterations = 1000000;
+
+        double result = 1.0;
+        for (int i = iterations; i > 0; i--)
+        {
+            result = 1 + x * result / i;
+        }
+
+        return result;
+    }
 }
 

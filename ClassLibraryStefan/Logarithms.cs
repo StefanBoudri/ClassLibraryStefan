@@ -6,7 +6,6 @@ internal class Logarithms : MathStefan
     // In the already build in Math class of C# you use Log(x) instead of Ln(x) as used here
     public static double LnHandler(double x)
     {
-
         if (x <= 0)
         {
             return double.NaN;

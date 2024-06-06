@@ -1,4 +1,5 @@
-﻿namespace ClassLibraryStefan;
+﻿
+namespace ClassLibraryStefan;
 
 internal class Power : MathStefan
 {
@@ -12,6 +13,10 @@ internal class Power : MathStefan
         {
             return baseNumber;
         }
+        else if (exponent % 1 != 0)
+        {
+            return PowerCalculatorDecimal(baseNumber, exponent);
+        }
         else if (exponent > 0)
         {
             return PowerCalculator(baseNumber, exponent);
@@ -20,6 +25,11 @@ internal class Power : MathStefan
         {
             return 1 / PowerCalculator(baseNumber, -exponent);
         }
+    }
+
+    private static double PowerCalculatorDecimal(double baseNumber, double exponent)
+    {
+        return Exp(exponent * Ln(baseNumber));
     }
 
     private static double PowerCalculator(double baseNumber, double exponent)
