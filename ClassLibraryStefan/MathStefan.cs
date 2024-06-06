@@ -42,7 +42,7 @@ public class MathStefan
 
     public static double Sqrt(double x)
     {
-        return SquareRoot.SqrtHandler(x);
+        return Root.SqrtHandler(x);
     }
 }
 

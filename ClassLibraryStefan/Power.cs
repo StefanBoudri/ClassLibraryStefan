@@ -13,6 +13,10 @@ internal class Power : MathStefan
         {
             return baseNumber;
         }
+        else if (exponent == 0.5)
+        {
+            return Sqrt(baseNumber);
+        }
         else if (exponent % 1 != 0)
         {
             return PowerCalculatorDecimal(baseNumber, exponent);

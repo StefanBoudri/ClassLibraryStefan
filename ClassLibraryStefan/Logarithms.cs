@@ -58,7 +58,7 @@ internal class Logarithms : MathStefan
         return result;
     }
 
-    // Using formula Log(a, b) = ln(b)/ln(a)
+    // Using formula Loga(b) = ln(b)/ln(a)
     public static double LogHandler(double b, double a)
     {
        return Ln(b) / Ln(a);
