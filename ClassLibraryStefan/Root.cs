@@ -1,11 +1,11 @@
-﻿namespace ClassLibraryStefan;
+namespace ClassLibraryStefan;
 
 internal class Root : MathStefan
 {
     // Using binary search to find the square root
     public static double SqrtHandler(double x)
     {
-        // Put this statement in due to flaws of the precision the binary search calculates
+        // Put this statement in due to flaws of the precision the binary search estimates
         if (x == 1)
         {
             return 1; 
